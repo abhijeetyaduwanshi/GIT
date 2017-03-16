@@ -1,0 +1,31 @@
+In order to do the first commit we first have to make sure that we are in the GIT project. Do the list of all the folders in the project and we have to make sure that our project folder is empty.
+
+-> ls
+
+This will show us that the project us empty but you do the la means all then its going to show all the hidden files and folders as well. These hidden files and folders are mostly the system or admin files.
+
+-> ls -la
+
+We will notice that there is a .git folder that is the one that helps the GIT to manage the project and the changes that we make.
+
+Now lets start
+
+Before starting anything we have to first make files and filder maybe code files or some graphic designs. So as we will have something to add our repo.
+
+Now we want GIT to keep track of the changes and the change is that the project was first empty and now it is having some files in it.
+
+We have to add these new files to out GIT and to do that
+
+-> git add .
+
+This means that GIT please add all the changes
+
+Doing this will tell GIT that we have made some changes and GIT now knows this.
+In order to do this we will have to save the changes in THIS POINT OF TIME thats what is called as commit.
+
+Meaning that GIT save a image of everything what is there in project. Also we give a message along with saving an image of the current situation of the project.
+
+-> git commit -m "message here"
+
+This means that GIT save the current condition of the project in this point of time with this message, message is there for the work that we have finnished so that if we have to go back in time we can look for message and pull that image of the project.
+GIT save the image with -m a message and the message is in the quotes.
