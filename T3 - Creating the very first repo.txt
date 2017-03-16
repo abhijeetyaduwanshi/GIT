@@ -1,0 +1,33 @@
+To make a new GIT REPO we first create a new folder say "FirstLove" and in this folder we will have all of our files for the project.
+
+Now we want GIT to manage the project and the changes that we make and all other stuff. But how the hell is GIT going to know what is the folder to our project and what files we want GIT to manage.
+
+To do that we want to point GIT to the FirstLove Folder.
+
+But first we have to make sure where is GIT looking and to do so
+
+-> pwd
+
+Then its going to show us the directory that GIT is looking, now if we want to go to home directory
+
+-> cd ~
+
+This will take us to the home directory
+
+-> cd ..
+
+This will take us a folder up
+
+-> ls
+
+This will show us the list of all files and folders in the directory we are in currently
+
+-> cd <folder name>
+
+This will take us to the folder
+
+Once we reach to the folder we want GIT to manage our project we will have to specifically tell GIT that this is the folder where we want you to manage project or repository (repository is a technical term for project)
+
+-> git init
+
+This will initialize the GIT management and convert folder to a GIT project
