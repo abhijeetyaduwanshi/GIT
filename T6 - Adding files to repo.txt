@@ -1,0 +1,21 @@
+Now if we have made any changes in the local directory and checked the status then we can see the untracked files in red color.
+
+Now at this stage we will have to add this files to the GIT repo, which is a three step process.
+
+working directory > staging area > repository
+
+This means that the working directory is the local directory, staginfg area is the area where files go after they are been added, repository is the place where file goes after they are commited and this is out end place.
+
+Now to add the files to the staging area we have to add them
+
+single file can be added to the staging area with their name along with their extension
+
+-> git add second.txt
+
+multiple files can be added by period (.)
+
+-> git add .
+
+Doing this the files will reach the staging area, now if we check the status then the files name will be in green color that means that the files are in the staging area. If we still see the files in red color then that means that the files are not processed to the staging area.
+
+Now the files which are in the staging area even if there are multiple files, a single commit can push them all to the repo. But the files which are in the staging area only those files will make it to the repo with a single commit.

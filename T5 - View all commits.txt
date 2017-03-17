@@ -1,0 +1,19 @@
+How to view all our previous commits? To do this make sure we are in our project folder and to view commits log
+
+-> git log
+
+This will give us the list of all the commits that we have done in the past along with the dates and the author.
+
+If we are working in a team and we want to view commits from a particular author then
+
+-> git log --author="name"
+
+This is cool because we dont have to write authors full name their firstName or lastName can do the work.
+
+Now we know that GIT is keeping track of all the changes in our local directory we can always keep a track of the condition of our projct
+
+-> git status
+
+This will give us the current condition of our project, basically thsi compares the local directory to the repo in GIT and show if there is any changes.
+
+If we make any changes and check the status then this will be show in our bash in red color tha untracked files.
