@@ -1,0 +1,46 @@
+Little more about diff.
+
+First go and make some changes in the project and then check the status of the project.
+
+-> git status
+
+That should show the modified status.
+
+Now check the difference between the files in the local dir and the repo do diff
+
+-> git diff
+
+This will show all the differences in the working copy and the file in the repo.
+
+After we see the differences in the files 
+We just add the files
+
+-> git add .
+
+This will push the files in the staging area and will not make its way to the repo.
+
+Now if we do diff
+
+-> git diff
+
+We expect to see the differences because the modified files are still in the staging and not the repo.
+But we do not see any.
+Because the diff works in showing the differences between the working copy and the repo. and not between the staging area and the repo.
+
+Now if we want to see the differences between the files in the working copy and the staging we have to add the --staged with the diff
+
+-> git diff --staged
+
+This additional --staged will compare the difference in the files and show the files in the working copy and the staging area.
+Again the differentiation in the lines changed are done in respect to the local dir.
+Also if we dont commit the files which are added to the stagging then they will not make it to the repo and the regular diff will not show us the changes, then we will have to do the diff and diff --staged both to see the difference in the files in working copy, stagging and repo.
+
+So again
+
+-> git diff
+
+Working copy and the repo
+
+-> git diff --staged
+
+Working copy and the staging area.

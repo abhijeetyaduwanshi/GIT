@@ -1,0 +1,28 @@
+Now by this point of time we might have the files uploaded in the GIT and the repo is pretty stable.
+
+Now if we review the files in the local dir and make a mind to change some of the files in the local dir and save them then the local dir and the repo will have same files but different contents in them.
+
+To let git know about the changes then go the project dir in GIT BASH and
+
+-> git status
+
+This is going to show the files which are modified in the local dir and are different from the repo.
+
+Now to add the changes in the file in the repo as well we do
+
+-> git add <file name with extension>
+
+This will add the changed file to the staging area.
+
+Now we have to commit the changes added to the repo
+
+-> git commit -m "modified file"
+
+This will commit the changes to the repo.
+
+Now if we check the status we will get the clean dir.
+
+To make changes in multiple files we do the . ie period
+
+-> git add .
+-> git commit -m "modified multiple files"

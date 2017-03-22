@@ -1,0 +1,30 @@
+DO NOT FORGET TO COMMIT AFTER YOU DELETE A FILE
+If we have to delete the files from the repo that we accidently added to repo and want to remove or simply delete the file then the most easiest way is to remove the file.
+
+To remove the file we have to use the rm command with the file name and ext.
+
+BE VERY CAREFUL IN DELETING THE FILES
+Because this will not only remove the file from the repo but also from the working copy (local dir).
+
+->git rm <file name with ext>
+eg: we have to remove the home.html
+
+->git rm home.html
+rm home.html
+
+The second line is the confirmation as to tell the user that home.html has been removed.
+
+Now if we check status
+
+->git status
+
+This will show us the 
+deleted:	home.html
+
+Now its time to commit
+
+->git commit -m "home page deleted"
+
+This will commit the changes in this point of time that the home page was deleted.
+
+Commit is required at this point of time because we might have accidently deleted a file, so we can come here and look the file that we deleted.
