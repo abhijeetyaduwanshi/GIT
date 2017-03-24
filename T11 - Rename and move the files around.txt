@@ -1,0 +1,45 @@
+Rename the files
+If we rename the file with window explorer its very easy but a little confusing with GIT
+
+If we go and rename the file in our working copy and check the status of the project
+
+->git status
+
+GIT tells us that we deleted the file and added a new file
+Well actually we did do the same, renaming is remove the file and add the same file with a different name
+
+To actually do this, we add the file with the new name first and then remove the file with the old name
+
+->git add <newName.ext>
+->git rm <oldName.ext>
+
+Now if we check the status now the GIT will actually show us that the file was renamed from oldName.ext to newName.ext
+
+-> renamed:		ondName.ext -> newName.ext
+
+Now we can commit the changes
+
+->git commit -m "renamed oldName to newName"
+
+This is kind of confusing thats when moving the file comes in picture 
+
+Move the files which is very simple
+
+->git mv <oldName.ext> <newName.ext>
+
+This means git please move the file to a new location
+
+Now if we go and check the working folder (local dir) we see that the file is been renamed to newName and we did it with git and not manually.
+
+So moving a file is kind of renaming it, kind of confusing again but simple
+
+Now if we have to move the file to a different folder and rename it
+
+->git mv <oldName.ext> <destination folder>/<newName.ext>
+eg: git mv controller.txt controllers/homecontroller.txt
+
+This is to tell GIT please move the file with the old name to the destination folder slash newName
+
+Now if we check the status GIT will tell us that you have renamed and moved the file to the destination folder
+
+DONT FORGET TO COMMIT
